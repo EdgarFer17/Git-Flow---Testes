@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de usuário</h1>
+        <h3>Seja bem-vindo ao nosso site</h3>
+        
+        <form action="cadastrar-usuario" method="post">
+            <div class="campo">
+                <label for="nome">Nome:</label>
+                <input placeholder="Digite seu nome" type="text" id="nome" name="usuario_nome" required>
+            </div>
+            
+            <div class="campo">
+                <label for="cartao">Cartão:</label>
+                <input placeholder="Digite todos os digitos do seu cartão" type="number" id="cartao" name="cartao_de_credito" required>
+            </div>
+
+            <div class="campo">
+                <label for="senha1">Senha:</label>
+                <input placeholder="Digite sua senha" type="password" id="senha" name="usuario_senha" required>
+            </div>
+            
+            
+            <button id="botao">Cadastrar</button>
+        </form>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
